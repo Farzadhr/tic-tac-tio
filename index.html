@@ -183,21 +183,17 @@
 
 
         if (draw == true) {
-            alert("Game is draw")
-            setTimeout(function() {
-                window.location.reload();
-            }, 3000);
+            if (finish == false) {
+                $(".win").text("Game is draw");
+                $(".turn").text("Finish");
+                finish = true;
+            }
+
         }
     }
     $(".reset").click(function() {
         window.location.reload();
 
-    });
-    document.getElementById("1").dispatchEvent(new KeyboardEvent('keydown', {
-        'key': 'a'
-    }))
-    $("#1").keydown(function(e) {
-        alert(e.key);
     });
 </script>
 
