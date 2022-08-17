@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    background-color: black;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 .tictactoe {
     display: grid;
     grid-template-columns: auto auto auto;
+    position: relative;
 }
 
 .item {
@@ -22,5 +24,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 40px;
+    background-color: yellow;
+    transition: all 0.25s;
+}
+
+.item:hover {
+    box-shadow: inset 0px 0px 15px 5px darkgoldenrod;
+}
+
+.turn {
+    color: darkgoldenrod;
+}
+
+.win {
+    color: green;
+    font-size: 30px;
+}
+
+.reset {
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: darkgoldenrod;
+    color: black;
+    font-size: 20px;
+    transition: all 0.25s;
+}
+
+.reset:hover {
+    box-shadow: inset 0px 0px 15px 5px yellow;
 }
