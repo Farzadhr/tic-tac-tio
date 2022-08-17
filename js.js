@@ -79,8 +79,11 @@ function check(one, two, three) {
         if (bxone == true && bxtwo == true && bxthree == true) {
             $(".win").text("X win");
             $("#" + one).css("background-color", "green");
+            $("#" + one).css("transition", "0.5s all");
             $("#" + two).css("background-color", "green");
+            $("#" + two).css("transition", "1s all");
             $("#" + three).css("background-color", "green");
+            $("#" + three).css("transition", "1.5s all");
             $(".turn").text("Finish");
             setTimeout(() => {
                 $(".tictactoe").slideUp(500);
@@ -99,10 +102,10 @@ function check(one, two, three) {
             $(".turn").text("Finish");
             setTimeout(() => {
                 $(".tictactoe").slideUp(500);
-            }, 2000);
+            }, 1000);
             setTimeout(() => {
                 $(".owin").slideDown(500);
-            }, 2700);
+            }, 1600);
             finish = true;
             checked = false;
         }
