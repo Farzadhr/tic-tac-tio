@@ -1,0 +1,26 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tictactoe {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
