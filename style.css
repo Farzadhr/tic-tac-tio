@@ -3,6 +3,10 @@ html {
     background-color: black;
 }
 
+* {
+    font-family: sans-serif;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -25,8 +29,40 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    font-weight: 800;
     background-color: yellow;
     transition: all 0.25s;
+}
+
+.ctext {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.75s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xwin {
+    width: 308px;
+    height: 308px;
+    font-size: 400px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.owin {
+    width: 308px;
+    height: 308px;
+    font-size: 400px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
 
 .item:hover {
